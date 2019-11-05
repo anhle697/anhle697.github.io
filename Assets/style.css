@@ -19,23 +19,28 @@ body {
     overflow-x: hidden;
 }
 
-.clearfix{zoom: 1}
-.clearfix:after{
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
     content: '.';
     clear: both;
-    display:block;
+    display: block;
     height: 0;
     visibility: hidden;
 }
-nav{
+
+nav {
     display: block;
 }
-.row{
+
+.row {
     max-width: 1130px;
     margin: 0 auto;
 }
 
-.main-nav{
+.main-nav {
     float: right;
     list-style: none;
     margin-top: 100px;
@@ -48,17 +53,56 @@ nav{
     margin-right: 10px;
 }
 
-.logo img{
+.logo img {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
 }
 
-.title{
+.title {
     float: left;
     margin-left: 20px;
     font-size: 25px;
 }
 
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
 
+
+/* Dropdown button */
+.dropdown .dropdown-link {
+    font-size: 150%;
+    border: none;
+    outline: none;
+    color: red;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.dropdown .dropdown-link:visited {
+    color: red;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
